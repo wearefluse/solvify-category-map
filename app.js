@@ -1,4 +1,5 @@
 import 'dotenv/config';
+import chalk from 'chalk';
 
 import categoryMap from './map.js';
 import { getCategories } from './get-categories.js';
@@ -9,8 +10,8 @@ try {
   categoryTaxonomy = categoryTaxonomy.default;
 } catch (error) {
   if (error.code === 'ERR_MODULE_NOT_FOUND' && error.url.includes('taxonomy.json')) {
-    console.error(error.message);
-    console.error('Please run the command `npm run build` to download the Shopify taxonomy file.');
+    console.error(chalk.red(error.message));
+    console.error(chalk.red('Please run the command `npm run build` to download the Shopify taxonomy file.'));
     process.exit(1);
   }
   throw error;
@@ -81,7 +82,7 @@ const buildCategoryMap = async () => {
 
         // Check for a complete match in the taxonomy
         if (name.toLowerCase().includes(search1)) {
-          const result = `'${category.name}': ['${name}', ${id}],`;
+          const result = `"${category.name}": {\n  id: ${id},\n  name: "${chalk.greenBright(name)}"\n},`;
           if (!matches.includes(result)) {
             matches.push(result);
           }
@@ -93,7 +94,7 @@ const buildCategoryMap = async () => {
         const search2 = categorySplit.pop().toLowerCase() || '';
         for (const { id, name } of categoryTaxonomy) {
           if (name.toLowerCase().includes(search2)) {
-            const result = `'${category.name}': ['${name}', ${id}],`;
+            const result = `"${category.name}": {\n  id: ${id},\n  name: "${chalk.blueBright(name)}"\n},`;
             if (!matches.includes(result)) {
               matches.push(result);
             }
@@ -103,13 +104,13 @@ const buildCategoryMap = async () => {
 
       // Provide suggestions to the user
       if (matches.length) {
-        console.log(`Could not find Bol category ${category.name} in the Shopify taxonomy. To continue:\n  1. Select the best matching category in the Shopify taxonomy from the list below\n  2. Add the match to the category map (map-category.ts).\n  3. Save and re-run the command.\n`);
+        console.log(chalk.red(`Could not find Bol category ${chalk.yellow(category.name)} in the Shopify taxonomy. To continue:\n`) + `  1. Select the best matching category in the Shopify taxonomy from the list below\n  2. Add the match to the category map (map-category.ts).\n  3. Save and re-run the command.\n`);
         for (const match of matches) console.log(match);
-        console.log(`\nIf none of the suggestions match:\n  1. Manually search the Shopify taxonomy (categoryTaxonomy.ts).\n  2. Fill in the template below.`);
-        console.log(`\n'${category.name}': ['BEST_MATCH', BEST_MATCH_ID],\n`);
+        console.log(chalk.grey(`\nIf none of the suggestions match:\n  1. Manually search the Shopify taxonomy (categoryTaxonomy.ts).\n  2. Fill in the template below.`));
+        console.log(chalk.grey(`\n"${category.name}": {\n  id: BEST_MATCH_ID,\n  name: "BEST_MATCH_NAME"\n},\n`));
       } else {
-        console.log(`Could not find Bol category ${category.name} in the Shopify taxonomy. To continue:\n  1. Manually search for a match in the Shopify taxonomy (categoryTaxonomy.ts).\n  2. Fill in the template below.\n  3. Add the match to the category map (map-category.ts).\n  4. Save and re-run the command.\n`);
-        console.log(`\n'${category.name}': ['BEST_MATCH', BEST_MATCH_ID],\n`);
+        console.log(chalk.red(`Could not find Bol category ${category.name} in the Shopify taxonomy. To continue:\n`) + `  1. Manually search for a match in the Shopify taxonomy (categoryTaxonomy.ts).\n  2. Fill in the template below.\n  3. Add the match to the category map (map-category.ts).\n  4. Save and re-run the command.\n`);
+        console.log(`\n"${category.name}": {\n  id: BEST_MATCH_ID,\n  name: "BEST_MATCH_NAME"\n},\n`);
       }
 
       // Throw the category not found error
@@ -120,7 +121,7 @@ const buildCategoryMap = async () => {
 
 try {
   await buildCategoryMap();
-  console.log('Category map created successfully.');
+  console.log(chalk.greenBright('Category map created successfully!'));
 } catch (error) {
   throw error;
 }

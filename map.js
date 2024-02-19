@@ -567,7 +567,224 @@ const categoryMap = {
   "Dieren > Katten > Kattenbakken & kattenbakaccessoires > Kattenbakken": {
     id: 25,
     name: "Dieren > Benodigdheden voor huisdieren > Benodigdheden voor katten > Kattenbakken"
-  }
+  },
+  "Damesmode > Kleding > Broeken > Capri broeken": {
+    id: 175,
+    name: "Kleding en accessoires > Kleding > Korte broeken"
+  },
+  "Damesmode > Kleding > Jurken > Wikkeljurken": {
+    id: 160,
+    name: "Kleding en accessoires > Kleding > Jurken"
+  },
+  "Damesmode > Pyjama's & Loungewear > Loungewear > Loungebroeken": {
+    id: 179,
+    name: "Kleding en accessoires > Kleding > Nachtkleding en loungewear > Loungewear"
+  },
+  "Damesmode > Kleding > Jassen > Poncho's ": {
+    id: 167,
+    name: "Kleding en accessoires > Kleding > Buitenkleding > Jassen en jacks"
+  },
+  "Damesmode > Accessoires > Riemen > Tailleriemen": {
+    id: 257,
+    name: "Kleding en accessoires > Kledingaccessoires > Riemen"
+  },
+  "Herenmode > Accessoires > Riemen": {
+    id: 257,
+    name: "Kleding en accessoires > Kledingaccessoires > Riemen"
+  },
+  "Damesmode > Accessoires > Riemen > Broekriemen": {
+    id: 257,
+    name: "Kleding en accessoires > Kledingaccessoires > Riemen"
+  },
+  "Herenmode > Accessoires > Riemen > Broekriemen": {
+    id: 257,
+    name: "Kleding en accessoires > Kledingaccessoires > Riemen"
+  },
+  "Damesmode > Kleding > Broeken": {
+    id: 127,
+    name: "Kleding en accessoires > Kleding"
+  },
+  "Tuin > Tuinmeubelen > Partytenten": {
+    id: 4838,
+    name: "Sportartikelen > Buitenrecreatie > Kamperen en wandelen > Tenten"
+  },
+  "Tuin > Tuinaanleg > Overkappingen > Paviljoenen": {
+    id: 3876,
+    name: "Huis en tuin > Tuin en gazon > Buitenleven > Buitengebouwen > Accessoires voor luifels en prieeltjes"
+  },
+  "Wonen > Meubels > Bedden > Kinderbedden": {
+    id: 2063,
+    name: "Meubelen > Bedden en accessoires > Bedden en ledikanten"
+  },
+  "Tuin > Tuinmeubelen > Loungesets > Bank loungesets": {
+    id: 2138,
+    name: "Meubelen > Buitenmeubelen > Buitenzitjes > Buitenbanken"
+  },
+  "Tuin > Tuinmeubelen > Loungesets > Hoek loungesets": {
+    id: 2137,
+    name: "Meubelen > Buitenmeubelen > Buitenzitjes > Modulaire buitenbanken"
+  },
+  "Wonen > Meubels > Kasten > Vitrinekasten": {
+    id: 2071,
+    name: "Meubelen > Kasten en opbergmeubelen"
+  },
+  "Elektronica > Televisies & Accessoires > Televisieaccessoires > TV-kasten": {
+    id: 2071,
+    name: "Meubelen > Kasten en opbergmeubelen"
+  },
+  "Wonen > Meubels > Bedden > Kingsize Bedden": {
+    id: 2063,
+    name: "Meubelen > Bedden en accessoires > Bedden en ledikanten"
+  },
+  "Kantoor & School > Kantoorartikelen > Kantoormeubels": {
+    id: 2120,
+    name: "Meubelen > Kantoormeubelen > Kantoormeubelsets"
+  },
+  "Wonen > Meubels > Bedden > Logeerbedden": {
+    id: 2063,
+    name: "Meubelen > Bedden en accessoires > Bedden en ledikanten"
+  },
+  "Wonen > Meubels > Bedden > Hemelbedden": {
+    id: 2063,
+    name: "Meubelen > Bedden en accessoires > Bedden en ledikanten"
+  },
+  "Wonen > Meubels > Bedden > Halfhoogslapers": {
+    id: 2063,
+    name: "Meubelen > Bedden en accessoires > Bedden en ledikanten"
+  },
+  "Wonen > Meubels > Kasten > Opbergkasten": {
+    id: 2081,
+    name: "Meubelen > Kasten en opbergmeubelen > Opbergkasten en -kluisjes"
+  },
+  "Wonen > Meubels > Stoelen > Kuipstoelen": {
+    id: 2095,
+    name: "Meubelen > Stoelen"
+  },
+  "Koken & Tafelen > Barbecueaccessoires > Pizzastenen": {
+    id: 3462,
+    name: "Huis en tuin > Keuken en eetkamer > Kookgerei en bakvormen > Bakproducten > Pizzastenen"
+  },
+  "Wonen > Meubels > Matrassen > Eenpersoonsmatrassen": {
+    id: 2066,
+    name: "Meubelen > Bedden en accessoires > Matrassen"
+  },
+  "Elektronica > Luchtbehandeling & Klimaatbeheersing > Bijverwarming > Verwarmingsaccessoires": {
+    id: 3281,
+    name: "Huis en tuin > Huishoudelijke apparaten > Klimaatregeling > Ruimteverwarming"
+  },
+  "Gezondheid > EHBO > Medische handschoenen": {
+    id: 2724,
+    name: "Gezondheid en persoonlijke verzorging > Gezondheidszorg > EHBO"
+  },
+  "Gezondheid > Ontspanning > Massages > Massageapparaten": {
+    id: 2966,
+    name: "Gezondheid en persoonlijke verzorging > Persoonlijke verzorging > Massage en ontspanning > Massageapparaten"
+  },
+  "Elektronica > Luchtbehandeling & Klimaatbeheersing > Luchtbehandeling > Luchtontvochtigers": {
+    id: 3267,
+    name: "Huis en tuin > Huishoudelijke apparaten > Klimaatregeling > Ontvochtigers"
+  },
+  "Wonen > Meubels > Kasten > Hoekkasten": {
+    id: 2071,
+    name: "Meubelen > Kasten en opbergmeubelen"
+  },
+  "Tuin > Tuinmeubelen > Loungesets > Losse elementen voor loungesets": {
+    id: 2137,
+    name: "Meubelen > Buitenmeubelen > Buitenzitjes > Modulaire buitenbanken"
+  },
+  "Speelgoed > Buitenspeelgoed > Trampolines & Accessoires > Trampolines": {
+    id: 5211,
+    name: "Speelgoed en spellen > Apparaten voor buiten spelen > Trampolines"
+  },
+  "Tuin > Tuinmeubelen > Tuinbanken > Schommelbanken": {
+    id: 2105,
+    name: "Meubelen > Stoelen > Schommelstoelen"
+  },
+  "Tuin > Tuinmeubelen > Tuinsets > Diningset": {
+    id: 2132,
+    name: "Meubelen > Buitenmeubelen > Sets van buitenmeubelen"
+  },
+  "Elektronica > Luchtbehandeling & Klimaatbeheersing > Verkoeling > Airco's": {
+    id: 3265,
+    name: "Huis en tuin > Huishoudelijke apparaten > Klimaatregeling > Airconditioning"
+  },
+  "Wonen > Meubels > Bedden > Hoog laag bedden": {
+    id: 2063,
+    name: "Meubelen > Bedden en accessoires > Bedden en ledikanten"
+  },
+  "Dieren > Slimme dierbenodigdheden > Slimme kattenbakken": {
+    id: 25,
+    name: "Dieren > Benodigdheden voor huisdieren > Benodigdheden voor katten > Kattenbakken"
+  },
+  "Klussen > Vloeren & Tegels > Vloeren > Vinyl vloeren": {
+    id: 2217,
+    name: "Bouwmaterialen > Afbouwmaterialen > Vloeren"
+  },
+  "Klussen > Vloeren & Tegels > Vloeren > PVC vloeren": {
+    id: 2217,
+    name: "Bouwmaterialen > Afbouwmaterialen > Vloeren"
+  },
+  "Wonen > Meubels > Kasten > Vakkenkasten": {
+    id: 2071,
+    name: "Meubelen > Kasten en opbergmeubelen"
+  },
+  "Wonen > Meubels > Kamerschermen": {
+    id: 2145,
+    name: "Meubelen > Kamerafscheidingen"
+  },
+  "Kamperen & Outdoor > Kamperen > Caravan- & camperaccessoires > Camping elektronica": {
+    id: 4810,
+    name: "Sportartikelen > Buitenrecreatie > Kamperen en wandelen"
+  },
+  "Kerst > Kerstbomen > Kunstkerstbomen": {
+    id: 3162,
+    name: "Huis en tuin > Decoratie > Seizoens- en feestdagdecoraties"
+  },
+  "Elektronica > Persoonlijke verzorging > Huidverzorging > Gezichtsstomer": {
+    id: 2834,
+    name: "Gezondheid en persoonlijke verzorging > Persoonlijke verzorging > Cosmetica > Cosmetische hulpmiddelen > Hulpmiddelen voor huidverzorging > Gezichtsauna's"
+  },
+  "Persoonlijke verzorging > Haar > Haarverzorging > Haarcrème": {
+    id: 2932,
+    name: "Gezondheid en persoonlijke verzorging > Persoonlijke verzorging > Haarverzorging"
+  },
+  "Gezondheid > Thuistesten > Corona zelftesten": {
+    id: 2746,
+    name: "Gezondheid en persoonlijke verzorging > Gezondheidszorg > Medische tests"
+  },
+  "Tuin > Tuinmeubelen > Tuinbanken > Loungebanken": {
+    id: 2138,
+    name: "Meubelen > Buitenmeubelen > Buitenzitjes > Buitenbanken"
+  },
+  "Speelgoed > Buitenspeelgoed > Springkussens & Ballenbakken > Springkussens": {
+    id: 5199,
+    name: "Speelgoed en spellen > Apparaten voor buiten spelen > Springkussens"
+  },
+  "Elektronica > Keukenapparaten > Koelen & Vriezen > Koelkasten > Koel/vriescombinaties": {
+    id: 3649,
+    name: "Huis en tuin > Keuken en eetkamer > Keukenmachines > Koelkasten"
+  },
+  "Speelgoed > Houten speelgoed > Keukens & Winkeltjes": {
+    id: 5295,
+    name: "Speelgoed en spellen > Speelgoed > Spelen"
+  },
+  "Gezondheid > Thuistesten > DNA-testen": {
+    id: 2746,
+    name: "Gezondheid en persoonlijke verzorging > Gezondheidszorg > Medische tests"
+  },
+  "Huishouden > Vaatwassen > Vaatwassers > Vrijstaande vaatwassers": {
+    id: 3607,
+    name: "Huis en tuin > Keuken en eetkamer > Keukenmachines > Vaatwasmachines"
+  },
+  "Wonen > Meubels > Bedden > Twijfelaarbedden": {
+    id: 2063,
+    name: "Meubelen > Bedden en accessoires > Bedden en ledikanten"
+  },
+  "Baby > Babykamer > Babykamermeubels > Commodes & accessoires > Commodes": {
+    id: 2054,
+    name: "Meubelen > Meubelen voor baby's en peuters > Commodes"
+  },
+
 };
 
 export default categoryMap;
